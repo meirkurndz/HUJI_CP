@@ -1,0 +1,15 @@
+
+*.out
+*.exe
+*.o
+*.a
+*.so
+solution
+my_program
+
+.vscode/
+
+input.txt
+output.txt
+
+.DS_Store
