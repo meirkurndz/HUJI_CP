@@ -1,19 +1,25 @@
-Q_A
-Q_B
-Q_C
-Q_D
-Q_E
-*.out
-*.exe
-*.o
-*.a
-*.so
-solution
-my_program
+# 1. תתעלם מכל הקבצים בתיקייה
+*
 
-.vscode/
+# 2. אל תתעלם מהקבצים הבאים (חריגים)
+!*.cpp
+!*.h
+!*.hpp
+!*.py
+!*.java
+!*.json
+!*.txt
+!*.pdf
+!*.md
 
-input.txt
-output.txt
+# 3. אל תתעלם מהקובץ הזה עצמו
+!.gitignore
 
+# 4. תתעלם ספציפית מתיקיות הגדרות (גם אם הן מכילות json)
+**/.vscode/
+**/.idea/
+**/.clion/
+
+# 5. קבצי מערכת זבל
 .DS_Store
+Thumbs.db
