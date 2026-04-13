@@ -19,10 +19,10 @@ int main(){
     int n;
     cin >> n;
     while(n--){
-        string oper;
+        string op;
         int num;
-        cin >> oper >> num;
-        if(oper == "insert"){
+        cin >> op >> num;
+        if(op == "insert"){
             if(q.count(num) == 0){
                 q[num] = 1;
                 dist_keys++;
@@ -32,7 +32,7 @@ int main(){
                     doub_keys++;
                 }
             }
-        }else if(oper == "delete"){
+        }else if(op == "delete"){
             if(q.count(num) != 0){
                 q[num]--;
                 if(q[num] == 1){
